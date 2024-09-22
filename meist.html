@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrapi juhend">
+    <meta name="author" content="">
+    <title>Bootstrap 5 juhend</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap ikoonid-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!--minu CSS-->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+<!-- Navigatsioon --->
+    <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand me-5" href="index.html">Bootstrap 5</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdownNaised" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">Naised</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownNaised">
+                            <li><a class="dropdown-item" href="#">Kingad</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Saapad</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdownMehed" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">Mehed</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMehed">
+                            <li><a class="dropdown-item" href="#">Kingad</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Saapad</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="meist.html" role="button" aria-expanded="false">Meist</a>
+                    </li>
+                </ul>
+
+                <!--Otsi vorm -->
+                <form class="d-flex me-1">
+                    <div class="input-group">
+                        <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+                        <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+                    </div>
+                </form>
+            </div>
+            <div class="float-end">
+
+                <!--Login ikoon-->
+                <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+
+                <!--Ostukorvi ikoon-->
+                <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-6 p-3 mt-1">
+                <h4>Firmast</h4>
+                <div class="pe-3 text-justify">Nullam semper ligula ut mi gravida venenatis. Aenean maximus nisl sit amet dui volutpat auctor.
+                    Donec rhoncus magna eu nulla accumsan, ac suscipit purus viverra. Vivamus dictum ultrices tortor eu auctor.
+                    Aenean congue quam eget est dignissim, non aliquam velit feugiat. Pellentesque arcu diam, interdum id ante sit amet,
+                    mattis finibus dolor. Fusce consectetur consequat ipsum, vel pharetra neque bibendum vitae. Phasellus fermentum massa augue,
+                    non aliquet nibh vehicula non. Praesent scelerisque hendrerit quam quis condimentum.
+                    Sed iaculis orci ut quam maximus cursus. In hac habitasse platea dictumst.
+                    In quis odio eget enim sodales dignissim.</div>
+            </div>
+
+
+            <div class="col-lg-6 border border-info border-2 p-3 mt-1">
+                <h4 class="text-center">5 põhjust, miks eelistada meie firmat</h4>
+                <ul class="list-group list-group-flush list-group-item-action text-center">
+                    <li class="list-group-item list-group-item-action">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li class="list-group-item list-group-item-action">2. Cras id magna gravida, maximus lacus vitae, pharetra leo.</li>
+                    <li class="list-group-item list-group-item-action">3. Donec pharetra ultricies dolor ut venenatis.</li>
+                    <li class="list-group-item list-group-item-action">4. Quisque fermentum lectus sem, non sollicitudin sem commodo eget.</li>
+                    <li class="list-group-item list-group-item-action">5. Pellentesque habitant morbi tristique senectus et netus fames ac turpis.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container pt-5 text-center">
+            <h2 class="text-center p-2">Meie töötajad</h2>
+            <div class="row">
+                <a class="col" href="#modal1" role="button" data-bs-toggle="modal">
+                    <img class="pt-3" src="img/saskia.jpg">
+                </a>
+                <a class="col" href="#modal2" role="button" data-bs-toggle="modal">
+                    <img class="pt-3" src="img/karl.jpg">
+                </a>
+                <a class="col" href="#modal3" role="button" data-bs-toggle="modal">
+                    <img class="pt-3" src="img/tarvo.jpg">
+                </a>
+
+                <div class="modal" id="modal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Saskia Saabas</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body text-start">
+                                Saskia Saabas lorem ipsum dolor sit amet, consectetur 2021 adipiscing elit. Pellentesque tellus tortor, tristique sit amet nunc a, dictum viverra neque. Morbi sollicitudin efficitur urna ut tempus. Pellentesque malesuada lorem quis egestas porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vitae sem ut nisi rutrum ultrices a facilisis felis. In pretium arcu condimentum orci finibus vestibulum. Suspendisse tellus lacus, elementum eu quam at, imperdiet elementum nunc. Integer non augue sed sem egestas euismod ut non dolor. Donec pharetra quam in viverra facilisis. Aenean aliquet lacus nec turpis hendrerit sodales.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Karl Konts</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Karl Konts lorem ipsum dolor sit amet, consectetur 2017 adipiscing elit. Praesent vitae porta nibh. Curabitur mattis arcu ligula, ac sagittis lectus malesuada. Mauris interdum odio vitae turpis aliquet vulputate. Donec orci risus, commodo non orci ornare, ornare eleifend sapien. Nunc egestas nisl id lorem malesuada feugiat. Donec laoreet nunc quis rhoncus molestie. Integer elementum mauris et diam aliquam, quis tincidunt ligula luctus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Tarvo Tuhvel</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Tarvo Tuhvel lorem ipsum dolor sit amet, consectetur 2020 adipiscing elit. Nulla facilisi. Cras velit ante, iaculis et molestie pharetra, facilisis at urna. Ut diam diam, congue eget metus eu, congue tincidunt orci. Curabitur sed dolor tortor. Phasellus fermentum volutpat tempus. Phasellus pretium est lacus, sit amet vulputate nibh mattis quis. Donec interdum urna lectus, et tristique eros varius vel. Donec non porttitor tortor. Duis auctor, lectus ut hendrerit fermentum, urna nibh pulvinar mi, non vehicula nisi lorem id risus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-8">
+                <div>&copy dd.mm.yyyy</div>
+                <div>tel: 55555555</div>
+                <div>@: email@email.com</div>
+            </div>
+
+            <div class="col-sm-4 text-end">
+                <br />
+                <a class="p-1" href="#"><img src="img/facebook.png"></a>
+                <a class="p-1" href="#"><img src="img/instagram.png"></a>
+                <a class="p-1" href="#"><img src="img/twitter.png"></a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+    <!--Popper.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+    <!--Bootstrap.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>
